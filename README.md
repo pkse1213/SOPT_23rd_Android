@@ -1,1 +1,1 @@
-# SOPT_23rd_Android
+# SOPT 23기 안드로이드
