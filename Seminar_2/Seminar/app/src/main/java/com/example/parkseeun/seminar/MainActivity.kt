@@ -20,13 +20,18 @@ class MainActivity : AppCompatActivity() {
     var data5: String? = null
     var REQUEST_CODE_USER_ACTIVITY = 1000 // request code , 어느 Activity에서 돌아오는지 판별하려고 보내주는 코드
 
+    var homeFragment1: HomeFragment = HomeFragment()
+
+    // 이미 메모리에 올라가있어서 생성자 없이도 접근 가능
+    var homeFragment2: HomeFragment = HomeFragment.getInstance()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
 
         // fragment!!!
-        addFragment(HomeFragment())
+        addFragment(HomeFragment.getInstance()) // singleton
 
         btn_main_act_home_frag.setOnClickListener {
             replaceFragment(HomeFragment())
