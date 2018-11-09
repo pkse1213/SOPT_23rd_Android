@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import org.jetbrains.anko.startActivity
 
-class SplashActivity : AppCompatActivity() {
+class  SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
