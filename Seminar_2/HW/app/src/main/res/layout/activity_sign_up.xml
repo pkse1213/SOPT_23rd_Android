@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="회원가입"
+            android:textSize="24dp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:text="ID"
+                android:textAlignment="center"/>
+            <EditText
+                android:id="@+id/et_sign_up_act_id"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="아이디"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="PW"/>
+            <EditText
+                android:id="@+id/et_sign_up_act_pw"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:hint="비밀번호"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_sign_up_act_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="complete"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                />
+            <Button
+                android:id="@+id/btn_sign_up_act_close"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="close"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
