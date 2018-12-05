@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         }
         intent.getIntExtra("data3", 0)// 값이 없으면 0을 넣어주겠다
 
-//        btn_main.setOnClickListener {
+//        .setOnClickListener {
 //            // 버튼을 눌렀을 때 수행할 로직 작성
 //            startActivityForResult<UserActivity>(REQUEST_CODE_USER_ACTIVITY, "data1" to "안녕하세요!")
 //
