@@ -11,6 +11,19 @@ import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.backgroundColor
 
 class HomeFragment: Fragment() {
+
+    companion object {
+        var mInstance: HomeFragment? = null
+
+        @Synchronized
+        fun getInstance(): HomeFragment {
+            if(mInstance == null) {
+                mInstance = HomeFragment()
+            }
+            return mInstance!!
+        }
+    }
+
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val homeFragmentView: View = inflater!!.inflate(R.layout.fragment_home, container, false)
 
